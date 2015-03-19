@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        
+        <div data-role="page" id="inicio" class="wrap_principal">
+            
+            <div data-role="header" data-theme="b" class="header_index">
+                <h1>Apuntes de curso phonegap</h1>
+            </div>
+            
+            <div data-role="content">
+                
+                <ul data-role="listview" class="contenido_index">
+                    <li><a href="#botones">Botones</a></li>
+                    <li><a href="#dialogos" data-rel="dialog">Dialogos</a></li>
+                    <li><a href="#colapsable">Contenido colapsable</a></li>
+                    <li><a href="#acordeon">Acordeon</a></li>
+                    <li><a href="#grid">Varias columnas</a></li>
+                    <li><a href="#listas">Listas</a></li>
+                </ul>
+                
+            </div>
+            
+            <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="#" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div data-role="page" id="botones" class="wrap_principal">
+            
+            <div data-role="header" class="header_index">
+                <h1>Botones</h1>
+            </div>
+            
+            <div data-role="content" class="contenido_botones">
+                
+                <p>
+                    Los botones pueden ser creados con tres tipos de etiquetas las cuales son los hipervinculos 'a', 'button', e 'input';
+                    <br> Primero los botones con hipervinculos. (< a href="#"> valor < a> lleva de cierre ).
+                </p>
+                
+                
+                <a href="#" data-role="button">Boton</a>
+                
+                <p>
+                    Boton con la etiqueta button.  (< button >valor< button>) 
+                </p>
+                
+                <button>Boton</button>
+                
+                <p>
+                    Boton con la etiqueta input.  (< button >valor< button>). Puede tomar varios valores como reset, submit, text, etc..
+                </p>
+                
+                <input type="button" value="Boton" />     
+                
+                <p>
+                    Tambien se pueden crear grupo de botones de manera horizontal o vertical, primero los horizontales esto se hace en una etiqueta div con un attr llamado data-controlgroup(para el grupo) y data-type(para la posición).
+                </p>
+                          
+                <div data-role="controlgroup" data-type="horizontal">
+                    <input type="button" value="Boton" />     
+                    <input type="button" value="Boton" />     
+                    <input type="button" value="Boton" />     
+                </div>
+                          
+                <p>
+                    Ahora de manera vertical
+                </p>
+                          
+                <div data-role="controlgroup">
+                    <input type="button" value="Boton" />     
+                    <input type="button" value="Boton" />     
+                    <input type="button" value="Boton" />     
+                </div>
+                                                     
+            </div>
+            
+            <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div data-role="page" class="wrap_principal"  id="dialogos" >
+           <div data-role="header">
+               <h1>Dialogo</h1>
+           </div>
+            <div data-role="content">
+                <a href="#">Este es un cuadrto de dialogo con data-rel="dialog"</a>
+            </div>
+        </div>
+        
+        <div data-role="page" id="colapsable">
+            
+            <div data-role="header">
+                <h1>Contenido colapsable</h1>
+            </div>
+            
+            <div data-role="content">
+                <div data-role="collapsible">
+                    <h2>Contenedor 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia assumenda harum consectetur dolorem suscipit expedita exercitationem delectus. Veritatis laudantium, dolores aliquam quam provident est consectetur delectus iste enim impedit vitae.
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h2>Contenedor 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos vero repellendus, aliquid magnam. Error suscipit aliquid inventore ipsam omnis nemo cupiditate, voluptas quam quisquam, quidem libero totam? Ad consectetur, adipisci.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+        
+        <div data-role="page" id="acordeon">
+           
+            <div data-role="header">
+                <h2>Acordeón</h2>
+            </div>
+            
+            <div data-role="content" >
+                
+                <div data-role="collapsible-set">
+                    
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h2>Contenido 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem, cupiditate expedita voluptatum, repellendus reprehenderit placeat quis officia possimus vero consequuntur, aut vel aliquam optio nihil laborum iusto facere autem.
+                        </p>
+                    </div>
+                    
+                    <div data-role="collapsible">
+                        <h2>Contenido 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem, cupiditate expedita voluptatum, repellendus reprehenderit placeat quis officia possimus vero consequuntur, aut vel aliquam optio nihil laborum iusto facere autem.
+                        </p>
+                    </div>
+                    
+                    <div data-role="collapsible">
+                        <h2>Contenido 3</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem, cupiditate expedita voluptatum, repellendus reprehenderit placeat quis officia possimus vero consequuntur, aut vel aliquam optio nihil laborum iusto facere autem.
+                        </p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div data-role="page" id="grid">
+           
+           <div data-role="header">
+               <h2>Varias columnas</h2>
+           </div>
+           
+           <div data-role="content">
+              <p>
+                  En esta ocación se usará una calse en el contenedor general en donde crearé las columnas (ui-grid-a) y en cada columna se usará la clase (ui-block-a),(ui-block-b)...etc.
+              </p>
+              
+              <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                      <button>button 1</button>
+                  </div>
+                  <div class="ui-block-b">
+                      <button>button 2</button>
+                  </div>
+                  <div class="ui-block-a">
+                      <button>button 3</button>
+                  </div>
+                  <div class="ui-block-b">
+                      <button>button 4</button>
+                  </div>
+              </div>
+           </div>
+           
+           <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+        
+        <div data-role="page" id="listas">
+            <div data-role="header">
+                <h2>Listas</h2>
+            </div>
+            
+            <div data-role="content">
+                <div data-role="collapsible-set">
+                   
+                   <div data-role="collapsible">
+                       <h2>Listas normales</h2>
+                       <ul data-role="listview">
+                            <li data-role="list-divider" data-theme="b">Separador</li>
+                           <li>Item 1</li>
+                           <li>Item 2</li>
+                           <li>Item 3</li>
+                           <li data-role="list-divider" data-theme="b">Separador</li>
+                           <li>Item 4</li>
+                           
+                       </ul>
+                   </div>
+                   
+                   <div data-role="collapsible">
+                       <h2>Columnas anidadas</h2>
+                       <ul data-role="listview">
+                            <li>Numeros
+                                <ul data-filter="true" data-filter-placeholder="Buscar">
+                            
+                                    <li>Este es el número 1</li>
+                                   <li>Este es el número 2</li>
+                                   <li>Este es el número 3</li>
+                                   
+                                </ul>
+                            </li>
+                           <li>Letras
+                               <ul>
+                                   <li>Esta es la letra a</li>
+                                   <li>Esta es la letra b</li>
+                                   <li>Esta es la letra c</li>
+                                   <li>Esta es la letra d</li>
+                               </ul>
+                           </li>
+                                                      
+                       </ul>
+                   </div>
+                                       
+                </div>
+            </div>
+            
+            <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        
+                
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
