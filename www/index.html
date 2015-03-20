@@ -48,6 +48,8 @@
                     <li><a href="#acordeon">Acordeon</a></li>
                     <li><a href="#grid">Varias columnas</a></li>
                     <li><a href="#listas">Listas</a></li>
+                    <li><a href="#acelerometro">Acelerometro</a></li>
+                    <li><a href="#notificacion">Notificación</a></li>
                 </ul>
                 
             </div>
@@ -310,11 +312,68 @@
             </div> 
         </div>
         
+        <div data-role="page" id="acelerometro">
+            <div data-role="header">
+               <h1>Acelerometro</h1>                
+            </div>
+            <div data-role="content">
+                <div id="resultado">Test 1.0</div>
+            </div>
+            
+            <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        
+        <div id="notificacion" data-role="page">
+               
+            <script type="text/javascript">
+                $('#notificacion').live('pageinit',notificaciones);
+            </script>
+               
+            <div data-role="header">
+                <h1>Notificaciones</h1>
+            </div>
+            <div data-role="content" data-theme="b">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <button id="b_alerta">Alerta</button>
+                    </div>
+                    <div class="ui-block-b">
+                        <button id="b_confirmacion">Confirmacion</button>
+                    </div>
+                    <div class="ui-block-a">
+                        <button id="b_prompt">Prompt</button>
+                    </div>
+                    <div class="ui-block-b">
+                        <button id="b_ruido">Ruido</button>
+                    </div>
+                </div>
+                <div id="resultado2"></div>
+            </div>
+            <div class="footer" data-role="footer" data-position="fixed" data-theme="b" data-id="footerPPal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="back" data-rel="back">Atras</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="notext">Home</a></li>
+                        <li><a href="#" data-icon="arrow-r" data-iconpos="notext">Sig.</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        
                 
         
         <script src="js/jquery.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
