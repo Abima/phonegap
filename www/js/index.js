@@ -109,7 +109,7 @@ function prompt(buttomIndex, input){
 }
 
 
-
+onBodyLoad();
 
 
 
