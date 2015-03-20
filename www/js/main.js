@@ -9,6 +9,7 @@ function onDeviceReady(){
     
     navigator.accelerometer.clear(verAcelerometro); //Parar el acelerometro
 }
+/*
 
 function onInfo(evento){ //Nos proporciona el evento de accelerometro
     $('#resultado').html(
@@ -64,3 +65,4 @@ function prompt(buttomIndex, input){
 
 
 
+*/
