@@ -1,5 +1,5 @@
 function onBodyLoad(){
-    $(document).addEventListener('deviceready',onDeviceReady,false); //El evento deviceready es similar o lo mismo que el evento ready de una página web
+    document.addEventListener('deviceready',onDeviceReady,false); //El evento deviceready es similar o lo mismo que el evento ready de una página web
 }
 
 function onDeviceReady(){
@@ -9,7 +9,6 @@ function onDeviceReady(){
     
     navigator.accelerometer.clear(verAcelerometro); //Parar el acelerometro
 }
-/*
 
 function onInfo(evento){ //Nos proporciona el evento de accelerometro
     $('#resultado').html(
@@ -65,4 +64,3 @@ function prompt(buttomIndex, input){
 
 
 
-*/
